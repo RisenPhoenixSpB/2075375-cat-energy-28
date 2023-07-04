@@ -1,1 +1,16 @@
-// Начните писать стили здесь
+/* Общие стили */
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/visually-hidden.scss";
+
+/* Стили хедера */
+@import "./blocks/header/header.scss";
+@import "./blocks/header/logo.scss";
+@import "./blocks/header/menu-button.scss";
+@import "./blocks/header/navigation.scss";
+
+/* Стилт основного контента индекса */
+@import "./blocks/index/main-index.scss";
+@import "./blocks/index/intro.scss";

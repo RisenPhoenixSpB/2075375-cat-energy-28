@@ -2,11 +2,145 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="header">
+      <a class="header__logo-picture logo-picture" href="./index.html">
+        <img class="logo__picture" src="./img/mobile/logo/logo-picture-mobile.svg" alt="Логотип Кэт энерджи" width="34" height="38">
+      </a>
+      <a class="header__logo-text logo-text" href="./index.html">
+        <img class="logo__text" src="./img/mobile/logo/logo-text-mobile.svg" alt="Кэт энерджи" width="101" height="18">
+      </a>
+      <button class="header__button menu-button">
+        <span class="menu-button__burger menu-button__burger--closed"></span>
+        <span class="visually-hidden">Кнопка открытия-закрытия мобильного меню</span>
+      </button>
+      <nav class="header__navigation navigation navigation--closed">
+        <ul class="navigation__list">
+          <li class="navigation__item navigation__item--current">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-index">
+      <section class="main-index__intro intro">
+        <span class="intro__background"></span>
+        <div class="intro__container">
+          <h1 class="intro__title">Функциональное питание для котов</h1>
+          <p class="intro__text">Занялся собой? Займись котом!</p>
+        </div>
+        <img class="intro__image" src="./img/mobile/index/main/intro/foodbox.png" alt="Упаковка с кошачьим кормом">
+        <a class="intro__link" href="form.html">Подобрать программу</a>
+      </section>
+      <section class="main-index__products products">
+        <ul class="products__list">
+          <li class="products__item">
+            <span class="products__element products__element--loose"></span>
+            <h2 class="products__title">Похудение</h2>
+            <p class="products__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="products__link" href="catalog.html">Каталог slim</a>
+          </li>
+          <li class="products__item">
+            <span class="products__element products__element--gain"></span>
+            <h2 class="products__title">Набор массы</h2>
+            <p class="products__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="products__link" href="catalog.html">Каталог pro</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main-index__howitworks howitworks">
+        <h2 class="howitworks__title">Как это работает</h2>
+        <ul class="howitworks__list">
+          <li class="howitworks__item">
+            <span class="howitworks__element howitworks__element--leaf"></span>
+            <p class="howitworks__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="howitworks__item">
+            <span class="howitworks__element howitworks__element--reservoir"></span>
+            <p class="howitworks__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="howitworks__item">
+            <span class="howitworks__element howitworks__element--tableware"></span>
+            <p class="howitworks__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="howitworks__item">
+            <span class="howitworks__element howitworks__element--watches"></span>
+            <p class="howitworks__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-index__example example">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__container">
+          <ul class="example__list">
+            <li class="example__item">
+              <p class="example__item-title">5 кг</p>
+              <p class="example__item-text">снижение веса</p>
+            </li>
+            <li class="example__item">
+              <p class="example__item-title">60 дней</p>
+              <p class="example__item-text">затрачено времени</p>
+            </li>
+          </ul>
+          <div class="example__expenses-container">
+            <p class="example__expenses-text">Затраты на питание:</p>
+            <p class="example__expenses-text">15 000 руб.</p>
+          </div>
+          <div class="example__slider slider">
+            <button class="slider__trigger">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
+            <img class="slider__image slider__image--cat-before" src="./img/mobile/index/main/slider/fat-cat-mobile.jpg" alt="Кот до похудения">
+            <img class="slider__image slider__image--cat-after" src="./img/mobile/index/main/slider/skinny-cat-mobile.jpg" alt="Кот после похудения">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__cooperation cooperation">
+        <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="cooperation__address">
+          <p class="cooperation__address-location">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </address>
+      </div>
+      <a class="footer__map-link" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&z=16.87">
+        <img class="footer__map-image" src="./img/mobile/footer/location-mobile.jpg" alt="Местоположение на карте">
+      </a>
+      <a class="footer__link" href="index.html">
+        <img class="footer__logo" src="./img/mobile/footer/footer-logo.svg" alt="Логотип Cat Energy">
+      </a>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--vk" href="#"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--youtube" href="#"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--telegram" href="#"></a>
+        </li>
+      </ul>
+      <div class="footer__container">
+        <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer__htmlacademy-image" src="./img/mobile/footer/htmlacademy-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>

@@ -1,0 +1,11 @@
+.logo-picture {
+  @media (min-width: $tablet-width) {
+    margin: 53px 0 0 0;
+  }
+}
+
+.logo-text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

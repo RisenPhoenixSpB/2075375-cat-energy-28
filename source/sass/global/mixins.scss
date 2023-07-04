@@ -1,0 +1,60 @@
+/* Сброс стилей списков */
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Шрифты для главных заголовков на страницах */
+@mixin page-title-mobile {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@mixin page-title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Шрифты для подписей под главными заголовками */
+@mixin page-text-mobile {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@mixin page-text {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Шрифты для кнопок */
+
+/* Шрифты кнопки подбора программы (мобильная версия) */
+@mixin intro-button-text-mobile {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Шрифты кнопки подбора программы (планшет и десктоп) */
+@mixin intro-button-text {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
